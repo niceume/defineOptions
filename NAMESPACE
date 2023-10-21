@@ -1,0 +1,13 @@
+export(new_parser_def)
+
+exportClasses(ParserDef) # S4 Class
+exportMethods(define_option) # Generic method
+export(define_option)
+exportMethods(parse_with_defs) # Generic method
+export(parse_with_defs)
+S3method(summary,parsed_result) # S3 method
+
+export(opt_required_input_required)
+export(opt_optional_input_required)
+export(opt_optional_input_disallowed)
+
