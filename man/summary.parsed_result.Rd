@@ -16,6 +16,15 @@
   \item{object}{S3 parsed_result class}
   \item{...}{Further arguments passed to or from other methods.}
 }
+\value{
+  List
+  \item{message}{ character vector. Description of this list.  }
+  \item{assigned values}{ dataframe holding information about definition
+  name(def_name), option names(long_option or short_option), values and
+  how these values are supplied (opt_specified).}
+  \item{positional arguments}{ character vector of positional
+    arguments. If there are no positional arguments, NA is assigned.}
+}
 \seealso{
   \code{\link{parse_with_defs}}
 }
