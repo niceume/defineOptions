@@ -37,7 +37,6 @@
   \code{\link{defineOptions-package}}
 }
 \examples{
-library(defineOptions)
 parser_def = new_parser_def() |>
     define_option(
         list(

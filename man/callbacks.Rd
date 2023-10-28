@@ -37,9 +37,9 @@ to define that the option is required and its value is also required.
   \code{\link{ParserDef-class}}
   \code{\link{defineOptions-package}}
 }
-\examples{\dontrun{
-opt_optional_input_required( input_when_omitted = "70,180" )
-opt_optional_input_disallowed( input_when_specified = "TRUE",
-                               input_when_omitted = "FALSE" )
-opt_required_input_required()
-}}
+\examples{
+callback = opt_optional_input_required( input_when_omitted = "70,180" )
+callback = opt_optional_input_disallowed( input_when_specified = "TRUE",
+                                          input_when_omitted = "FALSE" )
+callback = opt_required_input_required()
+}
