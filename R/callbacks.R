@@ -33,7 +33,6 @@ opt_optional_input_disallowed = function( input_when_specified, input_when_omitt
                 }else if( is.na(input) || input == FALSE ){ # option wihtout value
                     return( input_when_specified )
                 }else{ # option with value
-                    print(input)
                     stop(paste("Value of option for", name, "is disallowed"))
                 }
   }

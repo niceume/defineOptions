@@ -98,9 +98,9 @@ setMethod("parse_with_defs",
               defined_option_correspondence = get_defined_option_correspondence(obj)
               defined_options = defined_option_correspondence$option
               if( any( (names(argument_list$options) %in% defined_options) == FALSE )){
-                  cat( "undefined option specified: " )
-                  cat( names(argument_list$options)[(names(argument_list$options) %in% defined_options) == FALSE])
-                  cat( "\n" )
+                  message = paste("undefined option specified:",
+                                  names(argument_list$options)[(names(argument_list$options) %in% defined_options) == FALSE])
+                  message( message )
                   stop()
               }
               
